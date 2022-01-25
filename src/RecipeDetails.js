@@ -8,9 +8,9 @@ const RecipeDetails = () => {
   const recipeByRedux = useSelector(state=> state.recipeByRedux );
   console.log(recipeByRedux)
   const getThatRecipe = recipeByRedux.filter((recipe)=>{
-    if(recipe.id===parseInt(id)){
-      return recipe
-    }
+  
+      return recipe.id===parseInt(id)
+    
   })
   
  
